@@ -1,0 +1,198 @@
+:root{
+  --color-text: #a531a7; /* Light text color */
+}
+
+.login-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Similar to Disney+ font */
+  color: #f9f9f9; /* Light text color */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/Gemini_Generated_Image_q82ij6q82ij6q82i.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1.0); 
+  z-index: 1;
+}
+
+.login-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: #f9f9f9(0, 0, 0, 0.8); /* Semi-transparent background */ 
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+}
+
+.logo {
+  width: 180px; /* Adjust size as needed */
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group input {
+  width: calc(100% - 20px);
+  padding: 15px 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: #f9f9f9;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight on focus */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff; /* Primary button color, similar to Disney+ */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.links {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.links a {
+  display: block;
+  color: #336699;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.links a:hover {
+  color: #007bff; /* Highlight on hover */
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 30px; /* Reduce el padding en el contenedor */
+    max-width: 380px; /* Reduce un poco el ancho máximo */
+  }
+
+  .logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 25px;
+  }
+
+  h1 {
+    font-size: 1.8em; /* Reduce el tamaño del título */
+  }
+
+  p {
+    font-size: 1em; /* Reduce el tamaño del párrafo */
+    margin-bottom: 25px;
+  }
+
+  .input-group input {
+    padding: 12px 10px; /* Reduce el padding de los inputs */
+    font-size: 0.95em;
+  }
+
+  .login-button {
+    padding: 12px; /* Reduce el padding del botón */
+    font-size: 1.1em;
+  }
+
+  .links a {
+    font-size: 0.9em; /* Reduce el tamaño de los enlaces */
+  }
+}
+
+/* Para pantallas de hasta 480px (dispositivos móviles pequeños) */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px; /* Reduce aún más el padding */
+    width: 95%; /* Ocupa más ancho en pantallas muy pequeñas */
+  }
+
+  .logo {
+    width: 120px; /* Haz el logo más pequeño */
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Tamaño de título más pequeño */
+  }
+
+  p {
+    font-size: 0.9em; /* Tamaño de párrafo más pequeño */
+    margin-bottom: 20px;
+  }
+
+  .input-group input {
+    padding: 10px 8px; /* Ajusta el padding del input */
+    font-size: 0.9em;
+  }
+
+  .login-button {
+    padding: 10px; /* Ajusta el padding del botón */
+    font-size: 1em;
+  }
+
+  .links {
+    margin-top: 20px; /* Reduce el margen superior de los enlaces */
+  }
+
+  .links a {
+    font-size: 0.85em; /* Enlaces más pequeños */
+  }
+}
